@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SL Paiano Transportes | Transporte de Cargas com Excelência</title>
+  <meta name="description" content="SL Paiano Transportes — mais de 15 anos em transporte de cargas, frete fracionado, entrega expressa e logística para todo o Sul do Brasil. Parceiros da Magazine Luiza.">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="SL Paiano Transportes">
+  <meta property="og:description" content="Soluções completas em logística e frete para empresas que precisam de agilidade, confiança e compromisso.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagens/hero-bg.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="menu-overlay" id="menu-overlay"></div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="#hero" onclick="closeMobileMenu()">Início</a></li>
+      <li><a href="#sobre-empresa" onclick="closeMobileMenu()">Sobre Nós</a></li>
+      <li><a href="#servicos" onclick="closeMobileMenu()">Serviços</a></li>
+      <li><a href="#partners" onclick="closeMobileMenu()">Parceiros</a></li>
+      <li><a href="#contact" onclick="closeMobileMenu()">Contato</a></li>
+      <li><a href="#contact" class="orcamento mobile-orcamento" onclick="closeMobileMenu()">Solicitar Orçamento</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="logo">
+      <div class="icon-box">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          class="icon-truck"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"
+          />
+        </svg>
+      </div>
+      <div class="marca">
+        <p class="title">SL Paiano</p>
+        <p class="subtitle">Transportes</p>
+      </div>
+    </div>
+    
+    <div class="nav">
+      <ul>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#sobre-empresa">Sobre Nós</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#partners">Parceiros</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </div>
+    <div class="orcamentonav">
+      <a href="#contact" class="orcamento">Solicitar Orçamento</a>
+    </div>
+    <button class="hamburger" id="hamburger-btn" aria-label="Abrir menu" onclick="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+  <div id="hero">
+    <img src="imagens/hero-bg.jpg" class="hero-image" alt="Frota de caminhões SL Paiano Transportes" loading="lazy">
+    <div class="hero-content">
+      <span class="age"><span class="dot"></span>+15 anos de experiência em transporte de cargas</span>
+      <div class="hero-titles-subtitles">
+        <p class="hero-title">Transporte de Cargas com <br> <span style="color: #1887D6;">Excelência</span> e Segurança</p>
+        <p class="hero-subtitle">Soluções completas em logística e frete para empresas que precisam de agilidade, confiança e compromisso. Parceiros de grandes varejistas como Magazine Luiza.</p>
+      </div>
+      <div class="hero-buttons">
+        <a href="#contact" class="orcamento">Solicitar Orçamento 
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" 
+            class="seta-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+          </svg>
+        </a>
+        <a href="https://wa.me/48991062626?text=Olá! Gostaria de um orçamento. Vim pelo site." class="button-zap" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            fill="none" viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" 
+            class="telephone-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+          </svg>
+        Fale Conosco</a>
+      </div>
+      <div class="hero-informations">
+        <span>
+          <div class="icon-fundo">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+              fill="none" viewBox="0 0 24 24" 
+              stroke-width="1.5" 
+              stroke="currentColor" 
+              class="location-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+          </div>
+
+          <p class="brazil-location">Todo Sul</p>
+          <p class="brazil-subtitle">do Brasil</p>
+        </span>
+        <span>
+          <div class="icon-fundo">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+              fill="none" viewBox="0 0 24 24" 
+              stroke-width="1.5" 
+              stroke="currentColor" 
+              class="location-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+          </div>
+            <p class="brazil-location">24/7</p>
+            <p class="brazil-subtitle">Atendimento</p>
+
+        </span>
+        <span>
+          <div class="icon-fundo">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+              fill="none" viewBox="0 0 24 24" 
+              stroke-width="1.5" 
+              stroke="currentColor" 
+              class="location-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+            </svg>
+          </div>
+
+          <p class="brazil-location">+500</p>
+          <p class="brazil-subtitle">Clientes Satisfeitos</p>
+
+        </span>
+      </div>
+    </div>
+  </div>
+  <section id="sobre-empresa">
+    <div class="sobre-conteudo">
+      <p class="title-empresa">SOBRE A EMPRESA</p>
+      <h1 class="titulo-sessao">
+        Mais de 15 anos transportando com <span>excelência</span>
+      </h1>
+      <p class="subtitle-empresa">A SL Paiano Transportes é uma empresa consolidada no mercado de transporte de cargas, oferecendo soluções logísticas completas para empresas de todos os portes. Nossa missão é garantir que sua carga chegue ao destino com segurança, agilidade e o melhor custo-benefício.</p>
+      <p class="subtitle-empresa">Trabalhamos com parceiros de grande porte como Magazine Luiza, oferecendo serviços de frete dedicado e distribuição em todo o território nacional.</p>
+      <ul class="beneficios-sobre">
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            fill="none" viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="#1887D6" 
+            class="check-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+          <span>Frota moderna e rastreada</span>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            fill="none" viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="#1887D6" 
+            class="check-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+          <span>Seguro de carga completo</span>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            fill="none" viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="#1887D6" 
+            class="check-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+          <span>Motoristas treinados e certificados</span>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            fill="none" viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="#1887D6" 
+            class="check-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+          <span>Pontualidade garantida</span>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            fill="none" viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="#1887D6" 
+            class="check-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+          <span>Preços competitivos</span>
+        </li>
+      </ul>
+    </div>
+    <div class="cards-sobre">
+      <div class="sobre-coluna">
+          <div class="card-stat">
+            <div class="sobre-iconbg">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                fill="none" viewBox="0 0 24 24" 
+                stroke-width="1.5" 
+                stroke="currentColor" 
+                class="icons-sobre">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
+              </svg>
+            </div>
+            <div class="cards-p">
+              <p class="sobre-title-cards">Qualificação Constante</p>
+              <p class="sobre-subtile-cards">da Equipe</p>
+            </div>
+          </div>
+
+          <div class="card-stat">
+            <div class="sobre-iconbg">
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                fill="none" viewBox="0 0 24 24" 
+                stroke-width="1.5" 
+                stroke="currentColor" 
+                class="icons-sobre">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
+              </svg>
+            </div>
+
+            <div class="cards-p">
+              <p class="sobre-title-cards">Nível de Atendimento</p>
+              <p class="sobre-subtile-cards">Qualificado</p>
+            </div>
+
+          </div>
+        </div>
+      <div class="card-valores">
+        <h3>Nossos Valores</h3>
+        <ul>
+          <li>
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              fill="none" viewBox="0 0 24 24" 
+              stroke-width="1.5" 
+              stroke="#D1D5DB" 
+              class="check-valores">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+            </svg>
+
+            <span>Comprometimento com o cliente</span>
+
+          </li>
+          <li>
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+                fill="none" viewBox="0 0 24 24" 
+              stroke-width="1.5" 
+              stroke="#D1D5DB" 
+              class="check-valores">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+            </svg>
+
+            <span>Transparência em todas as operações</span>
+          </li>
+          <li>
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              fill="none" viewBox="0 0 24 24" 
+              stroke-width="1.5" 
+              stroke="#D1D5DB" 
+              class="check-valores">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+            </svg>
+
+            <span>Inovação e melhoria contínua</span>
+          </li>
+          <li>
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              fill="none" viewBox="0 0 24 24" 
+              stroke-width="1.5" 
+              stroke="#D1D5DB" 
+              class="check-valores">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+            </svg>
+
+            <span>Responsabilidade socioambiental</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="servicos">
+    <div class="titles-servicos">
+      <h3 class="h3-servicos">NOSSOS SERVIÇOS</h3>
+      <h1>Soluções completas em <span>logística</span></h1>
+      <p class="h3-subtitle">Oferecemos uma gama completa de serviços de transporte e logística para atender todas as necessidades do seu negócio.</p>
+    </div>
+    
+    <div class="container-servicos">
+      <div class="cards-servicos">
+        <div class="servicos-fundoicon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            class="icon-truck-services"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"
+            />
+          </svg>
+        </div>
+        
+        <p class="title-cards-servicos">Transporte Rodoviário</p>
+        <p class="subtitle-cards-servicos">Transporte de cargas em todo o território nacional com frota própria e rastreamento em tempo real.</p>
+
+      </div>
+      <div class="cards-servicos">
+        <div class="servicos-fundoicon">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 24 24" fill="none" 
+            stroke="currentColor" 
+            stroke-width="1.5" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            class="icon-truck-services">
+            <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/>
+          </svg>
+        </div>
+        <p class="title-cards-servicos">Frete Fracionado</p>
+        <p class="subtitle-cards-servicos">Ideal para cargas menores, com consolidação de mercadorias e preços competitivos</p>
+      </div>
+
+      <div class="cards-servicos">
+        <div class="servicos-fundoicon">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+              fill="none" viewBox="0 0 24 24" 
+              stroke-width="1.5" 
+              stroke="currentColor" 
+              class="icon-truck-services">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+        </div>
+        <p class="title-cards-servicos">Entrega Expressa</p>
+        <p class="subtitle-cards-servicos">Serviço de entrega urgente com prazos reduzidos para atender suas necessidades.</p>
+      </div>
+
+      <div class="cards-servicos">
+        <div class="servicos-fundoicon">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            fill="none" viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" 
+            class="icon-truck-services">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+          </svg>
+        </div>
+        <p class="title-cards-servicos">Carga Dedicada</p>
+        <p class="subtitle-cards-servicos">Veículo exclusivo para sua carga, garantindo segurança e agilidade total.</p>
+      </div>
+
+      <div class="cards-servicos">
+        <div class="servicos-fundoicon">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            fill="none" viewBox="0 0 24 24" 
+            stroke-width="1.5" 
+            stroke="currentColor" 
+            class="icon-truck-services">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+          </svg>
+        </div>
+        <p class="title-cards-servicos">Distribuição Urbana</p>
+        <p class="subtitle-cards-servicos">Entrega no destino final para grandes varejistas, com gestão completa das entregas.</p>        
+      </div>
+
+      <div class="cards-servicos">
+        <div class="servicos-fundoicon">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 24 24" fill="none" 
+            stroke="currentColor" 
+            stroke-width="1.5" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            class="icon-truck-services"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"/><path d="m7 16.5-4.74-2.85"/><path d="m7 16.5 5-3"/><path d="M7 16.5v5.17"/><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"/><path d="m17 16.5-5-3"/><path d="m17 16.5 4.74-2.85"/><path d="M17 16.5v5.17"/><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"/><path d="M12 8 7.26 5.15"/><path d="m12 8 4.74-2.85"/><path d="M12 13.5V8"/>
+          </svg>
+        </div>
+        <p class="title-cards-servicos">Armazenagem</p>
+        <p class="subtitle-cards-servicos">Soluções de armazenagem e redistribuição de cargas para otimizar sua logística.</p>      
+      </div>
+    </div>
+    <a href="#contact">Solicitar Proposta de Serviços</a>
+  </section>
+  <section id="partners">
+    <div class="titles-partners">
+      <h3>PARCEIROS</h3>
+      <h2>Empresas que confiam no nosso trabalho</h2>
+    </div>
+    <div class="cards-parceiros">
+      <div class="card-parceiros">
+        <div>ML</div>
+        <p class="name-empresa">Magazine Luiza</p>
+      </div>
+      <div class="card-parceiros">
+        <div>MG</div>
+        <p class="name-empresa">Magalu</p>
+      </div>
+      <div class="card-parceiros">
+        <div>PP</div>
+        <p class="name-empresa">Papyrus</p>
+      </div>
+      </div>
+    </div>
+    <p class="subtitle-partners">Empresas que  confiam na SL Paiano para transportar suas mercadorias com segurança e pontualidade em todo Sul do Brasil.</p>
+  </section>
+  <section id="contact">
+    <div class="contact-titles">
+      <h3>CONTATO</h3>
+      <h2>Fale com a <span>nossa equipe</span></h2>
+      <p>Solicite um orçamento ou tire suas dúvidas. Estamos prontos para atender você.</p>
+    </div>
+    <div class="colunas">
+
+    
+    <div class="coluna-forms">
+      <h2 class="title-forms">Envie sua mensagem</h2>
+      <form 
+        id="contato-form"
+        action="https://formspree.io/f/mzdzpgpl"
+        method="POST"
+        class="form"
+        novalidate
+      >
+        <div class="input-group">
+          <label for="nome">Nome Completo</label>
+          <input 
+            type="text" 
+            name="nome" 
+            id="nome" 
+            placeholder="Seu nome"
+            required
+          >
+        </div>
+
+        <div class="row-inputs">
+          <div class="input-group">
+            <label for="email">E-mail</label>
+            <input 
+              type="email" 
+              name="email" 
+              id="email" 
+              placeholder="seu@email.com"
+              required
+            >
+          </div>
+
+          <div class="input-group">
+            <label for="telefone">Telefone</label>
+            <input 
+              type="tel" 
+              name="telefone" 
+              id="telefone" 
+              placeholder="(11) 99999-9999"
+              required
+            >
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea 
+            name="mensagem" 
+            id="mensagem" 
+            placeholder="Descreva sua necessidade de transporte"
+            required
+          ></textarea>
+        </div>   
+
+        <input type="hidden" name="_subject" value="Novo contato - Landing Page">
+
+        <button type="submit" class="btn-enviar">
+          <span>Enviar Mensagem</span>
+        </button>
+
+        <p id="form-status" class="form-status"></p>
+      </form>
+
+    </div>
+      <div class="coluna-location">
+        <div class="cards-contact-coluna">
+          <div class="cards-contact">
+            <div class="contact-fundoicon">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                fill="none" viewBox="0 0 24 24" 
+                stroke-width="1.5" 
+                stroke="currentColor" 
+                class="icon-truck-services">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+              </svg>
+            </div>
+            <div class="contact-titles-cards">
+              <p class="title-cards-contact">Telefone</p>
+              <p class="subtitle-cards-contact">(48) 99106-2626</p>
+            </div>
+          </div>
+          <div class="cards-contact">
+            <div class="contact-fundoicon">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 24 24" fill="none" 
+              stroke="currentColor" 
+              stroke-width="1.5" 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              class="icon-truck-services">
+              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+            </div>
+            <div class="contact-titles-cards">
+              <p class="title-cards-contact">Email</p>
+              <p class="subtitle-cards-contact">
+                <a href="mailto:slpaiano_slpaiano@hotmail.com">slpaiano_slpaiano@hotmail.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="cards-contact">
+            <div class="contact-fundoicon">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                fill="none" viewBox="0 0 24 24" 
+                stroke-width="1.5" 
+                stroke="currentColor" 
+                class="icon-truck-services">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
+            </div>
+            <div class="contact-titles-cards">
+              <p class="title-cards-contact">Endereço</p>
+              <p class="subtitle-cards-contact">Av. Fortunata Lucia Rosso Giassi, 584</p>
+            </div>
+          </div>
+          <div class="cards-contact">
+            <div class="contact-fundoicon">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                fill="none" viewBox="0 0 24 24" 
+                stroke-width="1.5" 
+                stroke="currentColor" 
+                class="icon-truck-services">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+            </div>
+            <div class="contact-titles-cards">
+              <p class="title-cards-contact">Horário</p>
+              <p class="subtitle-cards-contact">Seg - Sex: 8h às 18h</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="maps">
+          <iframe
+            src="https://www.google.com/maps?q=Av.%20Etelvina%20Santana%20598%20Criciúma%20SC&z=17&output=embed"
+            width="100%"
+            height="330"
+            style="border:0; border-radius:12px;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="div-junta-coluna">
+      <div class="coluna-1">
+        <div class="logo">
+          <div class="box-icon-truck">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              class="icon-truck"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"
+              />
+            </svg>
+          </div>
+          <div class="marca">
+            <p class="title">SL Paiano</p>
+            <p class="subtitle">Transportes</p>
+          </div>
+        </div>
+        <p>Há mais de 15 anos oferecendo soluções completas em transporte de cargas e logística para empresas de todo o Brasil.</p>
+        <div class="rede-social">
+          <span>
+            <div class="icon-social">
+              <svg xmlns="http://www.w3.org/2000/svg"
+              width="20" height="20" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              stroke-width="2" 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              class="lucide lucide-facebook-icon lucide-facebook">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </div>
+          </span>
+          <span>
+            <div class="icon-social">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+              width="20" height="20"
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              stroke-width="2" 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              class="lucide lucide-instagram-icon lucide-instagram">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </div>
+          </span>
+          <span>
+            <div class="icon-social">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+              width="20" height="20" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              stroke-width="2" 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              class="lucide lucide-linkedin-icon lucide-linkedin">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="coluna-2">
+        <h2>Links Rápidos</h2>
+        <ul>
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#sobre-empresa">Sobre Nós</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#partners">Parceiros</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="div-junta-coluna">
+      <div class="coluna-3">
+        <h2>Nossos Serviços</h2>
+        <ul>
+          <li>Transporte Rodoviário</li>
+          <li>Frete Fracionado</li>
+          <li>Entrega Expressa</li>
+          <li>Carga Dedicada</li>
+          <li>Distribuição Urbana</li>
+          <li>Armazenagem</li>
+        </ul>
+      </div>
+      <div class="coluna-4">
+        <h2>Contato</h2>
+        <ul>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" 
+              fill="none" viewBox="0 0 24 24" 
+              stroke-width="1.5" 
+              stroke="currentColor" 
+              class="icon-truck-services">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+            </svg>
+            <li>(48)99106-2626 <br> (48)99106-2630</li>
+          </span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 24 24" fill="none" 
+              stroke="currentColor" 
+              stroke-width="1.5" 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              class="icon-truck-services">
+              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+              <li>
+                <a href="mailto:slpaiano_slpaiano@hotmail.com">slpaiano_slpaiano@hotmail.com</a>
+              </li>
+            </span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" 
+              fill="none" viewBox="0 0 24 24" 
+              stroke-width="1.5" 
+              stroke="currentColor" 
+              class="icon-truck-services">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+            <li class="avenida">Av. Fortunata Lucia Rosso Giassi, 584</li>
+          </span>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="border-hr"></div>
+  <div class="final-apresentation">
+    <p>© 2025 SL Paiano Transportes. Todos os direitos reservados.</p>
+    <p>CNPJ: 03.440.444/0001-36</p>
+  </div>
+
+  <script>
+    const form = document.getElementById("contato-form");
+    const status = document.getElementById("form-status");
+    const telefoneInput = document.getElementById("telefone");
+    const submitButton = form.querySelector("button[type='submit']");
+
+    telefoneInput.addEventListener("input", () => {
+      let v = telefoneInput.value.replace(/\D/g, "");
+      v = v.replace(/^(\d{2})(\d)/, "($1) $2");
+      v = v.replace(/(\d{5})(\d)/, "$1-$2");
+      telefoneInput.value = v;
+    });
+
+    function telefoneValido(telefone) {
+      const regex = /^\(\d{2}\) \d{5}-\d{4}$/;
+      return regex.test(telefone);
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      status.textContent = "";
+      status.className = "form-status";
+
+      const telefone = telefoneInput.value;
+
+      if (!telefoneValido(telefone)) {
+        status.textContent = "Informe um telefone válido com DDD.";
+        status.classList.add("erro");
+        return;
+      }
+
+      submitButton.disabled = true;
+      submitButton.textContent = "Enviando...";
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            "Accept": "application/json"
+          }
+        });
+
+        if (response.ok) {
+          status.textContent = "Mensagem enviada com sucesso! Entraremos em contato.";
+          status.classList.add("sucesso");
+          form.reset();
+        } else {
+          throw new Error("Erro no envio");
+        }
+      } catch (error) {
+        status.textContent = "Erro ao enviar. Tente novamente mais tarde.";
+        status.classList.add("erro");
+      }
+
+      submitButton.disabled = false;
+      submitButton.innerHTML = `<span>
+        <svg xmlns="http://www.w3.org/2000/svg" 
+          width="20" height="20" 
+          viewBox="0 0 24 24" 
+          fill="none" 
+          stroke="currentColor" 
+          stroke-width="1.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          class="lucide lucide-send">
+          <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/>
+          <path d="m21.854 2.147-10.94 10.939"/>
+        </svg>
+        Enviar Mensagem</span>`;
+    });
+
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", () => {
+      header.classList.toggle("scrolled", window.scrollY > 50);
+    });
+
+    function toggleMobileMenu() {
+      const nav = document.getElementById("mobile-nav");
+      const overlay = document.getElementById("menu-overlay");
+      const btn = document.getElementById("hamburger-btn");
+      nav.classList.toggle("open");
+      overlay.classList.toggle("open");
+      btn.classList.toggle("open");
+    }
+
+    function closeMobileMenu() {
+      document.getElementById("mobile-nav").classList.remove("open");
+      document.getElementById("menu-overlay").classList.remove("open");
+      document.getElementById("hamburger-btn").classList.remove("open");
+    }
+
+    document.getElementById("menu-overlay").addEventListener("click", closeMobileMenu);
+  </script>
+</body>
+</html>
